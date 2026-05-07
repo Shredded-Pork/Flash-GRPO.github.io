@@ -253,56 +253,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column custom-width">
-            <h2 class="title is-2">Ablation on Video Conditioning Mechanisms</h2>
+            <h2 class="title is-2">Visualization</h2>
 
-            <div class="content has-text-justified my_link">
-              <td colspan="3">
-                <p>
-                  In our paper, we propose a novel video conditioning scheme that concatenates the tokens of a source video with the target video tokens along the frame dimension. To verify the effectiveness, we compared the "channel concatenation" technique used in baseline methods <a href="#ref-gcd">[1]</a>, <a href="#ref-gs-dit">[2]</a> with the "view concatenation" technique from <a href="#ref-syncammaster">[3]</a>. It is evident that the designed conditioning technique significantly enhances the model's performance.
-                </p>
-                <!-- <p><br></p> -->
-              </td>
-              
-
-
-            <div class="columns is-centered has-text-justified">
-              <td colspan="3">
-                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls poster="./videos/ablation/ablation_on_video_conditioning_compressed.jpg">
-                  <source src="./videos/ablation/ablation_on_video_conditioning_compressed.mp4" type="video/mp4">
+            <div class="columns is-centered">
+              <div class="column is-6">
+                <p><b>Wan2.1-1.3B</b></p>
+                <video muted autoplay loop width="100%" preload="metadata" controls>
+                  <source src="./videos/teaser1-wan2.1-1.3B.mp4" type="video/mp4">
                 </video>
-              </td>
+              </div>
+  
+              <div class="column is-6">
+                <p><b>Flash-GRPO</b></p>
+                <video muted autoplay loop width="100%" preload="metadata" controls>
+                  <source src="./videos/teaser1-flash.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
+            <p class="has-text-centered" style="margin-top: 12px; font-size: 0.95rem;">
+              <b>Prompt:</b> Marvel superhero Iron Man flying high in the sky, amidst a clear blue cloudless day. Tony Stark, wearing his iconic red, gold, and black armor, pilots the Iron Man suit effortlessly. His sleek helmet reflects the sunlight, and his glowing red eyes scan the horizon. Flying at an altitude of over 10,000 feet, he performs acrobatic maneuvers, twisting and turning gracefully. The Iron Man suit’s thrusters emit a soft humming sound as it glides smoothly. The background showcases vast, unobstructed skies dotted with fluffy white clouds. In the distance, a few birds fly by, adding life to the serene landscape. Iron Man maintains a calm and focused expression, ready for any challenge. The shot captures him from above, showcasing the intricate design and movement of his suit. Dynamic aerial perspective, fast-paced camera movements, and sweeping shots reveal the beauty and power of Iron Man’s flight.
+            </p>
             <p><br></p>
         </div>
   </section>
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column custom-width">
-            <!-- <h2 class="title is-2"></h2> -->
-            <div class="content has-text-justified" style="margin-top: -0px;">
-              
-              <b>Reference:</b> <br>
-                <a name="ref-gcd" id="ref-gcd"></a>
-                [1] Van Hoorick, Basile, et al. "Generative camera dolly: Extreme monocular dynamic novel view synthesis." European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024.<br>
-                <a name="ref-gs-dit" id="ref-gs-dit"></a>
-                [2] Bian, Weikang, et al. "GS-DiT: Advancing Video Generation with Pseudo 4D Gaussian Fields through Efficient Dense 3D Point Tracking." arXiv preprint arXiv:2501.02690 (2025).<br>
-                <a name="ref-syncammaster" id="ref-syncammaster"></a>
-                [3] Bai, Jianhong, et al. "SynCamMaster: Synchronizing Multi-Camera Video Generation from Diverse Viewpoints." arXiv preprint arXiv:2412.07760 (2024).<br>
-                <a name="ref-trajattn" id="ref-trajattn"></a>
-                [4] Zeqi Xiao, et al. "Trajectory attention for fine-grained video motion control." The Thirteenth International Conference on Learning Representations, 2025.<br>
-                <a name="ref-das" id="ref-das"></a>
-                [5] Gu, Zekai, et al. "Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control." arXiv preprint arXiv:2501.03847 (2025).<br>
-                <br>
-                <br>
-                <b>Acknowledgments:</b> <br>We thank Jinwen Cao, Yisong Guo, Haowen Ji, Jichao Wang, and Yi Wang from Kuaishou Technology for their invaluable help in constructing the training dataset.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="columns is-centered">
